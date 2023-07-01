@@ -536,7 +536,6 @@ video {
 .icon-svg {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
-  font-size: 1rem;
 }
 
 .fixed {
@@ -547,14 +546,9 @@ video {
   bottom: 0px;
 }
 
-.mx-6 {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .my-6 {
@@ -562,8 +556,21 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .mb-8 {
@@ -578,8 +585,8 @@ video {
   margin-top: 1rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .box-border {
@@ -594,12 +601,8 @@ video {
   display: flex;
 }
 
-.h-\[160px\] {
-  height: 160px;
-}
-
-.h-\[400px\] {
-  height: 400px;
+.h-\[170px\] {
+  height: 170px;
 }
 
 .h-\[48px\] {
@@ -610,8 +613,12 @@ video {
   height: 100vh;
 }
 
-.w-\[160px\] {
-  width: 160px;
+.min-h-\[450px\] {
+  min-height: 450px;
+}
+
+.w-\[170px\] {
+  width: 170px;
 }
 
 .w-\[300px\] {
@@ -622,8 +629,12 @@ video {
   width: 350px;
 }
 
-.w-\[650px\] {
-  width: 650px;
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-\[750px\] {
+  width: 750px;
 }
 
 .w-full {
@@ -671,7 +682,7 @@ video {
 }
 
 .bg-cobalt-blue-o {
-  background-color: hsl(234, 85%, 45%, .1);
+  background-color: hsl(234, 85%, 45%, .05);
 }
 
 .bg-dark-gray-blue {
@@ -680,15 +691,15 @@ video {
 }
 
 .bg-green-teal-o {
-  background-color: hsl(166, 100%, 37%, .1);
+  background-color: hsl(166, 100%, 37%, .05);
 }
 
 .bg-light-red-o {
-  background-color: hsl(0, 100%, 67%, .1);
+  background-color: hsl(0, 100%, 67%, .05);
 }
 
 .bg-orangey-yellow-o {
-  background-color: hsl(39, 100%, 56%, .1);
+  background-color: hsl(39, 100%, 56%, .05);
 }
 
 .bg-persian-blue {
@@ -751,6 +762,10 @@ video {
   font-size: 4rem;
 }
 
+.font-extrabold {
+  font-weight: 800;
+}
+
 .leading-none {
   line-height: 1;
 }
@@ -805,23 +820,23 @@ video {
 }
 
 @font-face {
-  font-family: HankenGrotesk-Bold;
+  font-family: "HankenGrotesk-Medium";
 
-  src: url(/src/assets/fonts/static/HankenGrotesk-Bold.ttf);
+  src: url(/src/assets/fonts/static/HankenGrotesk-Medium.ttf);
 
   font-weight: 500;
 }
 
 @font-face {
-  font-family: HankenGrotesk-Medium;
+  font-family: "HankenGrotesk-Bold";
 
-  src: url(/src/assets/fonts/static/HankenGrotesk-Medium.ttf);
+  src: url(/src/assets/fonts/static/HankenGrotesk-Bold.ttf);
 
   font-weight: 700;
 }
 
 @font-face {
-  font-family: HankenGrotesk-ExtraBold;
+  font-family: "HankenGrotesk-ExtraBold";
 
   src: url(/src/assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
 
@@ -866,13 +881,13 @@ video {
   }
 }
 
-@media (min-height: 320px) and (orientation: landscape) {
+@media (max-height: 550px) and (orientation: landscape) {
   .mobile-landscape\:hidden {
     display: none;
   }
 }
 
-@media (max-height: 800px) and (orientation: portrait) {
+@media (max-height: 850px) and (orientation: portrait) {
   .mobile-portrait\:hidden {
     display: none;
   }
