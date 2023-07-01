@@ -4,17 +4,17 @@
 
 @font-face {
   font-family: "HankenGrotesk-Medium";
-  src: url(assets/fonts/static/HankenGrotesk-Medium.ttf);
+  src: url(/src/assets/fonts/static/HankenGrotesk-Medium.ttf);
   font-weight: 500;
 }
 @font-face {
   font-family: "HankenGrotesk-Bold";
-  src: url(assets/fonts/static/HankenGrotesk-Bold.ttf);
+  src: url(/src/assets/fonts/static/HankenGrotesk-Bold.ttf);
   font-weight: 700;
 }
 @font-face {
   font-family: "HankenGrotesk-ExtraBold";
-  src: url(assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+  src: url(/src/assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
   font-weight: 800;
 }
 
@@ -23,6 +23,6 @@
     @apply flex justify-between items-center w-[300px] h-[3rem] mx-2 font-HGMedium;
   }
   .icon-svg {
-    @apply mx-2 text-[1rem];
+    @apply mx-2;
   }
 }
