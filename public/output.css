@@ -822,7 +822,8 @@ video {
 @font-face {
   font-family: "HankenGrotesk-Medium";
 
-  src: url(/src/assets/fonts/static/HankenGrotesk-Medium.ttf);
+  src: local("HankenGrotesk-Medium"), format("opentype"),
+    url(/src/assets/fonts/static/HankenGrotesk-Medium.ttf);
 
   font-weight: 500;
 }
@@ -830,7 +831,8 @@ video {
 @font-face {
   font-family: "HankenGrotesk-Bold";
 
-  src: url(/src/assets/fonts/static/HankenGrotesk-Bold.ttf);
+  src: local("HankenGrotesk-Bold"), format("opentype"),
+    url(/src/assets/fonts/static/HankenGrotesk-Bold.ttf);
 
   font-weight: 700;
 }
@@ -838,7 +840,8 @@ video {
 @font-face {
   font-family: "HankenGrotesk-ExtraBold";
 
-  src: url(/src/assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+  src: local("HankenGrotesk-ExtraBold"), format("opentype"),
+    url(/src/assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
 
   font-weight: 800;
 }
