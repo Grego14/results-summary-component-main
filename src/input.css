@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: HankenGrotesk-Bold;
+  src: url(/src/assets/fonts/static/HankenGrotesk-Bold.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: HankenGrotesk-Medium;
+  src: url(/src/assets/fonts/static/HankenGrotesk-Medium.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: HankenGrotesk-ExtraBold;
+  src: url(/src/assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+  font-weight: 800;
+}
+
+@layer components {
+  .stat {
+    @apply flex justify-between items-center w-[300px] h-[3rem] mx-2 font-HGMedium;
+  }
+  .icon-svg {
+    @apply mx-2 text-[1rem];
+  }
+}
