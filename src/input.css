@@ -3,27 +3,45 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: "HankenGroteskVariable";
+  src: local("HankenGrotesk-Variable") url("../public/fonts/HankenGrotesk-VariableFont_wght.woff2")
+    format("woff2-variations");
+}
+
+.font-medium {
+  font-family: "HankenGroteskVariable-medium";
+}
+
+.font-bold {
+  font-family: "HankenGroteskVariable-bold";
+}
+
+.font-extrabold {
+  font-family: "HankenGroteskVariable-extrabold";
+}
+
+/* @font-face {
   font-family: "HankenGrotesk-Medium";
   src: local("HankenGrotesk-Medium"), format("opentype"),
-    url(/src/assets/fonts/static/HankenGrotesk-Medium.ttf);
+    url(../public/fonts/static/HankenGrotesk-Medium.ttf);
   font-weight: 500;
 }
-@font-face {
+ @font-face {
   font-family: "HankenGrotesk-Bold";
   src: local("HankenGrotesk-Bold"), format("opentype"),
-    url(/src/assets/fonts/static/HankenGrotesk-Bold.ttf);
+    url(../public/fonts/static/HankenGrotesk-Bold.ttf);
   font-weight: 700;
 }
 @font-face {
   font-family: "HankenGrotesk-ExtraBold";
   src: local("HankenGrotesk-ExtraBold"), format("opentype"),
-    url(/src/assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+    url(../public/fonts/static/HankenGrotesk-ExtraBold.ttf);
   font-weight: 800;
-}
+} */
 
 @layer components {
   .stat {
-    @apply flex justify-between items-center w-[300px] h-[3rem] mx-2 font-HGMedium;
+    @apply flex justify-between items-center w-[300px] h-[3rem] mx-2;
   }
   .icon-svg {
     @apply mx-2;

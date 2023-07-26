@@ -530,7 +530,6 @@ video {
   width: 300px;
   align-items: center;
   justify-content: space-between;
-  font-family: HankenGrotesk-Medium, sans-serif;
 }
 
 .icon-svg {
@@ -734,16 +733,8 @@ video {
   text-align: center;
 }
 
-.font-HGBold {
-  font-family: HankenGrotesk-Bold, sans-serif;
-}
-
-.font-HGExtraBold {
-  font-family: HankenGrotesk-ExtraBold, sans-serif;
-}
-
-.font-HGMedium {
-  font-family: HankenGrotesk-Medium, sans-serif;
+.font-HankenGroteskVariable-extrabold {
+  font-family: HankenGroteskVariable, sans-serif;
 }
 
 .text-\[18px\] {
@@ -760,6 +751,10 @@ video {
 
 .text-\[4rem\] {
   font-size: 4rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .font-extrabold {
@@ -820,31 +815,42 @@ video {
 }
 
 @font-face {
+  font-family: "HankenGroteskVariable";
+
+  src: local("HankenGrotesk-Variable") url("../public/fonts/HankenGrotesk-VariableFont_wght.woff2")
+    format("woff2-variations");
+}
+
+.font-medium {
+  font-family: "HankenGroteskVariable-medium";
+}
+
+.font-bold {
+  font-family: "HankenGroteskVariable-bold";
+}
+
+.font-extrabold {
+  font-family: "HankenGroteskVariable-extrabold";
+}
+
+/* @font-face {
   font-family: "HankenGrotesk-Medium";
-
   src: local("HankenGrotesk-Medium"), format("opentype"),
-    url(/src/assets/fonts/static/HankenGrotesk-Medium.ttf);
-
+    url(../public/fonts/static/HankenGrotesk-Medium.ttf);
   font-weight: 500;
 }
-
-@font-face {
+ @font-face {
   font-family: "HankenGrotesk-Bold";
-
   src: local("HankenGrotesk-Bold"), format("opentype"),
-    url(/src/assets/fonts/static/HankenGrotesk-Bold.ttf);
-
+    url(../public/fonts/static/HankenGrotesk-Bold.ttf);
   font-weight: 700;
 }
-
 @font-face {
   font-family: "HankenGrotesk-ExtraBold";
-
   src: local("HankenGrotesk-ExtraBold"), format("opentype"),
-    url(/src/assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
-
+    url(../public/fonts/static/HankenGrotesk-ExtraBold.ttf);
   font-weight: 800;
-}
+} */
 
 .hover\:bg-gradient-to-t:hover {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));

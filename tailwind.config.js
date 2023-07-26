@@ -2,12 +2,42 @@
 module.exports = {
   content: ["./*html"],
   theme: {
-    extend: {},
-    fontFamily: {
+    extend: {
+      fontFamily: {
+        "HankenGroteskVariable-medium": ["HankenGroteskVariable", "sans-serif"],
+        "HankenGroteskVariable-bold": ["HankenGroteskVariable", "sans-serif"],
+        "HankenGroteskVariable-extrabold": ["HankenGroteskVariable", "sans-serif"],
+      },
+    },
+    variants: {
+      extend: {
+        fontWeight: ["medium", "bold", "extrabold"],
+      },
+    }
+    /*    fontFamily: {
       HGMedium: ["HankenGrotesk-Medium", "sans-serif"],
       HGBold: ["HankenGrotesk-Bold", "sans-serif"],
       HGExtraBold: ["HankenGrotesk-ExtraBold", "sans-serif"],
-    },
+             "HGV-Medium": [
+        "HankenGrotesk-VariableFont_wght",
+        {
+          fontVariationSettings: "'wght' 500",
+        },
+      ],
+      "HGV-Bold": [
+        "HankenGrotesk-VariableFont_wght",
+        ,
+        {
+          fontVariationSettings: "'wght' 700",
+        },
+      ],
+      "HGV-ExtraBold": [
+        "HankenGrotesk-VariableFont_wght",
+        {
+          fontVariationSettings: "'wght' 800",
+        },
+      ],
+    }, */
     colors: {
       "violet-blue": "hsla(256, 72%, 46%, 1)",
       "persian-blue": "hsla(241, 72%, 46%, 0)",
