@@ -1,5 +1,6 @@
 /node_modules
 
-.prettierrc.js
-.prettierignore
 style-guide.md
+
+bun.lockb
+jsconfig.json
